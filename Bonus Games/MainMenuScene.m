@@ -39,7 +39,7 @@
 -(void)displayWelcomenote
 {
     
-    CCLabelTTF *title = [CCLabelTTF labelWithString:@"Pointerware Bonus Games!" fontName:@"Courier" fontSize:20];
+    title = [CCLabelTTF labelWithString:@"Pointerware Bonus Games!" fontName:@"Courier" fontSize:20];
     title.color = ccc3(255,0,0);
     title.position = ccp(165, 440);
     [self addChild: title];
@@ -48,12 +48,12 @@
 -(void)startButton
 {
     
-    CGSize winSize = [[CCDirector sharedDirector] winSize];
-    CCMenuItem *spinButton = [CCMenuItemImage
+    winSize = [[CCDirector sharedDirector] winSize];
+    spinButton = [CCMenuItemImage
                               itemFromNormalImage:@"greenButton.png" selectedImage:@"redButton.png"
                               target:self selector:@selector(startGame)];
     spinButton.position = ccp(winSize.width/2, 45);
-    CCMenu *spinButtonMenu = [CCMenu menuWithItems:spinButton, nil];
+    spinButtonMenu = [CCMenu menuWithItems:spinButton, nil];
     spinButtonMenu.position = CGPointZero;
     [self addChild:spinButtonMenu];
 
@@ -63,9 +63,9 @@
 {
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"rainforest.mp3"];
     
-    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    winSize = [[CCDirector sharedDirector] winSize];
     
-    CCSprite *background = [CCSprite spriteWithFile:@"background.png"];
+    background = [CCSprite spriteWithFile:@"background.png"];
     
     background.position = ccp(winSize.width/2, winSize.height/2);
     

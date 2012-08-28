@@ -9,6 +9,8 @@
 #import "cocos2d.h"
 #import "SimpleAudioEngine.h"
 
+NSMutableDictionary *anotherDict;
+
 @interface GameScene : CCLayer
 {
     BOOL touch;
@@ -17,9 +19,8 @@
     CCLabelTTF *youWonLabel;
     CCLabelTTF *cashLabel;
     int numbers[6];
-    CCMenu *m1,*m2,*m3,*m4,*m5,*m6;
-    CCMenuItemImage *b1,*b2,*b3,*b4,*b5,*b6;
-    
+    CCMenuItemImage *item;
+    CCMenu *menu;
 }
 
 +(id) scene;

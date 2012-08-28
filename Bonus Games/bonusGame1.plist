@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Icon pics</key>
+	<array>
+		<string>1.png</string>
+		<string>2.png</string>
+		<string>3.png</string>
+		<string>4.png</string>
+		<string>5.png</string>
+		<string>6.png</string>
+	</array>
+	<key>backGround</key>
+	<string>background.png</string>
+	<key>youwon</key>
+	<string>youWon.png</string>
+	<key>cash</key>
+	<string>cash.png</string>
+	<key>greenbutton</key>
+	<string>greenButton.png</string>
+	<key>redbutton</key>
+	<string>redButton.png</string>
+</dict>
+</plist>

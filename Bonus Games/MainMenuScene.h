@@ -9,7 +9,11 @@
 
 @interface MainMenuScene : CCLayer
 {
-  
+    CCMenuItem *spinButton;
+    CCMenu *spinButtonMenu;
+    CGSize winSize;
+    CCSprite *background;
+    CCLabelTTF *title;
 }
 
 +(id) scene;
@@ -17,5 +21,6 @@
 -(void)startGame;
 -(void)displayWelcomenote;
 -(void)creatingBackground;
+-(void)startButton;
 
 @end
